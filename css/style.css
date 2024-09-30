@@ -3,25 +3,34 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
   margin: 0;
-  background: #ccc;
+  /* Add gradient */
+  background: #f4f4f4;
+  
 }
 
 article {
   width: 210mm;
-  height: 297mm;
+  height: 340mm;
   margin: 20px auto;
   position: relative;
+  background: url('/img/top-image.png'); /* Fallback for browsers */
+  background: url('/img/top-image.png') no-repeat top,
+              url('/img/bottom-image.png') no-repeat bottom,
+              linear-gradient(#d1d1d1 , #ffffff, #ffffff ,  #ffffff, #d1d1d1 );
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
 }
 
 address {
   position: absolute;
   bottom: 8mm;
   right: 20mm;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -36,6 +45,112 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background-image: url('/img/logo.png');
+  /* add shadow */
+  box-shadow: 5px 5px 10px black;
+  border-radius: 100px;
 }
 
 /* Your CSS below here */
+
+nav {
+  text-align: center;
+  padding-top: 250px;
+  padding-right: 40px;
+  margin-bottom: -60px;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  color: black;
+  font-size: 10px;
+text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+  /* font-style: italic; */
+}
+
+q {
+  font-size: 12px;
+  font-style: italic
+}
+
+.translation {
+  font-size: 10px;
+}
+
+
+.column-container {
+  display: flex;
+
+}
+
+.column-container h3 {
+}
+
+.left-column {
+  width: 50%;
+  margin-left: 60px;
+  margin-right: 10px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.right-column {
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 60px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* .column {
+  float: left;
+  width: 50%;
+  
+}
+*/
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  */
+
+h3 {
+  font-size: 25px;
+  margin-bottom: -7px;
+
+}
+
+
+/* .top-logo {
+  max-width: 99%;
+  max-height: 99%;
+} */
+
+/* 
+.bottom-logo {
+  margin: 0;
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+} */
