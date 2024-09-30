@@ -15,7 +15,7 @@ body {
 
 article {
   width: 210mm;
-  height: 340mm;
+  height: 350mm;
   margin: 20px auto;
   position: relative;
   background: url('/img/top-image.png'); /* Fallback for browsers */
@@ -46,7 +46,6 @@ h1 {
   color: white;
   text-shadow: 1px 1px 1px black;
   background-image: url('/img/logo.png');
-  /* add shadow */
   box-shadow: 5px 5px 10px black;
   border-radius: 100px;
 }
@@ -84,7 +83,6 @@ h2 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 15px;
-  /* font-style: italic; */
 }
 
 q {
@@ -96,13 +94,15 @@ q {
   font-size: 10px;
 }
 
+h3 {
+  font-size: 25px;
+  margin-bottom: -7px;
+
+}
 
 .column-container {
   display: flex;
 
-}
-
-.column-container h3 {
 }
 
 .left-column {
@@ -120,37 +120,3 @@ q {
   text-align: justify;
   font-size: 14px;
 }
-
-/* .column {
-  float: left;
-  width: 50%;
-  
-}
-*/
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}  */
-
-h3 {
-  font-size: 25px;
-  margin-bottom: -7px;
-
-}
-
-
-/* .top-logo {
-  max-width: 99%;
-  max-height: 99%;
-} */
-
-/* 
-.bottom-logo {
-  margin: 0;
-  width: 210mm;
-  height: 297mm;
-  margin: 20px auto;
-  position: relative;
-} */
